@@ -1,4 +1,4 @@
-environment = "voidmapper.dme"
+environment = "tgstation.dme"
 
 [langserver]
 dreamchecker = true

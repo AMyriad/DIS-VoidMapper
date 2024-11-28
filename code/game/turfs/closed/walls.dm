@@ -3,8 +3,8 @@
 /turf/closed/wall
 	name = "wall"
 	desc = "A huge chunk of iron used to separate rooms."
-	icon = 'icons/turf/walls/metal_wall.dmi'
-	icon_state = "0-2"
+	icon = 'voidmapper/default_wall.dmi'
+	icon_state = "wall"
 	explosive_resistance = 1
 	rust_resistance = RUST_RESISTANCE_BASIC
 
@@ -32,6 +32,18 @@
 	var/decon_type
 
 	var/list/dent_decals
+
+/turf/closed/wall/single
+	icon_state = "single"
+
+/turf/closed/wall/double
+	icon_state = "double"
+
+/turf/closed/wall/triple
+	icon_state = "triple"
+
+/turf/closed/wall/quad
+	icon_state = "quad"
 
 /turf/closed/wall/mouse_drop_receive(atom/dropping, mob/user, params)
 	if(dropping != user)
